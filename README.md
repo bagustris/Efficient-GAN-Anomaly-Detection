@@ -23,20 +23,25 @@ Please cite our work if you find it useful for your research and work:
 }
 ```
 
-## Prerequisites.
+## Prerequisites
 To run the code, follow those steps:
 
-Install Python 3
+Make virtual env via Conda/Mini conda
+Link: https://docs.conda.io/en/latest/miniconda.html 
 
+Then, create new env, e.g.,
 ```
-sudo apt install python3 python3-pip
+conda create -n nvidia-tensorflow1.15 python=3.8
+conda activate nvidia-tensorflow1.15
 ```
-Download the project code:
+Clone or download the project code:
 
 ```
 git clone https://github.com/houssamzenati/Efficient-GAN-Anomaly-Detection
+cd Efficient-GAN-Anomaly-Detection
 ```
-Install requirements (in the cloned repository):
+
+Install requirements (inside virtual env):
 
 ```
 pip3 install -r requirements.txt
