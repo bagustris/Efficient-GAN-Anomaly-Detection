@@ -48,5 +48,10 @@ Running the code with different options
 
 ```
 python3 main.py <gan, bigan> <mnist, kdd> run --nb_epochs=<number_epochs> --label=<0, 1, 2, 3, 4, 5, 6, 7, 8, 9> --w=<float between 0 and 1> --m=<'cross-e','fm'> --d=<int> --rd=<int>
+# example:
+python3 main.py bigan mnist run --nb_epochs=2 --label=0 --w=1 --m=fm --d=1 --rd=4
 ```
 To reproduce the results of the paper, please use w=0.1 (as in the original AnoGAN paper which gives a weight of 0.1 to the discriminator loss), d=1 for the feature matching loss.  
+
+Updates:  
+- 2022/09/08: tested on Ubuntu 20.04, python 3.8. RTX3090, it works!
