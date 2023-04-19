@@ -59,4 +59,5 @@ python3 main.py bigan mnist run --nb_epochs=2 --label=0 --w=1 --m=fm --d=1 --rd=
 To reproduce the results of the paper, please use w=0.1 (as in the original AnoGAN paper which gives a weight of 0.1 to the discriminator loss), d=1 for the feature matching loss.  
 
 ## Updates:  
+- 2023/04/19: need to upgrade `setuptools` for conda env
 - 2022/09/08: tested on Ubuntu 20.04, python 3.8. RTX3090, it works!
